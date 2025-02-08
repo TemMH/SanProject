@@ -8,7 +8,11 @@ import { Head } from '@inertiajs/vue3';
 <template>
     <!-- <Layout> -->
         <Head title="YYYY" />
-        <h1>HEllo</h1>
-        <!-- <p>Hello {{ user.name }}, welcome</p> -->
-    <!-- </Layout> -->
-</template>
+         <h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>
+
+
+    <!-- <p>Hello {{ user.name }}, welcome</p> -->
+<!-- </Layout> -->
+    </template>
