@@ -9,11 +9,11 @@ import { Head } from "@inertiajs/vue3";
     <!-- <Layout> -->
     <Head title="YYYY" />
 
-    <header class="flex justify-center w-full h-14 border-2 mt-2 py-1">
+    <header class="fixed flex justify-center w-full h-14 border-2 mt-2 py-1">
         <nav
             class="flex justify-between rounded-xl bg-blue-500 backdrop-blur-xs w-3/5 h-full p-2"
         >
-            <div class="w-1/5"></div>
+            <div class="w-1/5">IRKUTSUN</div>
             <div class="block w-2/5">
                 <p>Address</p>
                 <p>Время работы</p>
@@ -22,12 +22,12 @@ import { Head } from "@inertiajs/vue3";
         </nav>
     </header>
 
-    <div class="flex">
+    <section class="flex">
         <div class="block w-1/3 h-24 bg-red-500"></div>
         <div class="flex w-2/3 h-24 bg-blue-500"></div>
-    </div>
+    </section>
 
-    <div class="flex justify-center">
+    <section class="flex justify-center">
         <div class="block bg-pink-200 w-full h-24 text-center">
             <h1>loremTitle</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -40,9 +40,9 @@ import { Head } from "@inertiajs/vue3";
             <h1>loremTitle</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-    </div>
+    </section>
 
-    <div
+    <section
         class="flex justify-around w-96 h-48 bg-slate-800 rounded-xl shadow-lg place-self-center"
     >
         <div class="flex-col justify-between text-center">
@@ -60,9 +60,9 @@ import { Head } from "@inertiajs/vue3";
             <h1>title</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="w-full h-32 bg-red-500">
+    <section class="w-full h-32 bg-red-500">
         <div class="flex w-3/5 place-self-center">
             <div class="">img</div>
 
@@ -83,9 +83,9 @@ import { Head } from "@inertiajs/vue3";
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="flex">
+    <section class="flex">
         <div class="block w-2/3 h-64">
             <div class="flex">
                 <div class="w-1/2 h-32 bg-slate-400"></div>
@@ -94,9 +94,9 @@ import { Head } from "@inertiajs/vue3";
             <div class="bg-red-500 w-full h-32"></div>
         </div>
         <div class="w-1/3 bg-blue-400 h-64"></div>
-    </div>
+    </section>
 
-    <div class="block">
+    <section class="block">
         <h1 class="place-self-center">TITLE</h1>
         <div class="flex justify-around">
             <div class="flex-col text-center">
@@ -136,9 +136,9 @@ import { Head } from "@inertiajs/vue3";
                 <div class="">description</div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container mx-auto text-center">
+    <section class="container mx-auto text-center">
         <h1 class="place-self-center">TITLE</h1>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img
@@ -198,9 +198,9 @@ import { Head } from "@inertiajs/vue3";
                 width="150"
             />
         </div>
-    </div>
+    </section>
 
-    <div class="flex">
+    <section class="flex">
         <div class="flex-col justify-between w-1/2">
             <div class="block text-center">
                 <h1>title</h1>
@@ -231,7 +231,7 @@ import { Head } from "@inertiajs/vue3";
             </div>
         </div>
         <div class="w-1/2">map</div>
-    </div>
+    </section>
     <!-- <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
   Когда вы все время выглядите
   <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
