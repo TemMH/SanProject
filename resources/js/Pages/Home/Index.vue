@@ -50,19 +50,18 @@ import { Head } from "@inertiajs/vue3";
         </nav>
     </header>
 
-    <section class="flex pt-20 place-self-center max-w-screen-xl max-xl:w-full">
+    <section
+        class="flex pt-20 place-self-center max-w-screen-xl max-xl:w-full  font-mono text-3xl"
+    >
         <div
             class="flex-col justify-between w-1/3 h-auto bg-red-500 text-center"
         >
             <div>
-                <h1>Title</h1>
+                <h1>Title Ipsum</h1>
             </div>
-            <div class="">
+            <div class="py-5">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nostrum, provident! Rerum quam, asperiores molestiae est
-                    voluptatem illo ab maiores fugiat modi libero ex cumque
-                    voluptates quos iste blanditiis aliquid! Voluptate!
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
                 </p>
             </div>
 
@@ -115,53 +114,105 @@ import { Head } from "@inertiajs/vue3";
         </div>
     </section>
 
-    <section class="flex mt-20 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full">
+    <section
+        class="flex mt-20 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full font-mono text-xl"
+    >
         <div class="block bg-pink-200 w-1/3 h-24 text-center">
-            <h1>loremTitle</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1 class="text-3xl font-bold">20%</h1>
+            <p class="pt-5">Lorem, ipsum dolor</p>
         </div>
         <div class="block bg-pink-500 w-1/3 h-24 text-center">
-            <h1>loremTitle</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1 class="text-3xl font-bold">3 500М2</h1>
+            <p class="pt-5">Lorem, ipsum dolor</p>
         </div>
         <div class="block bg-pink-200 w-1/3 h-24 text-center">
-            <h1>loremTitle</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1 class="text-3xl font-bold">3 ДНЯ</h1>
+            <p class="pt-5">Lorem, ipsum dolor</p>
         </div>
     </section>
 
-    <section class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full">
-        <div class="flex justify-around w-5/6 h-48 bg-slate-800 rounded-xl shadow-lg place-self-center">
+    <section
+        class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full"
+    >
+        <div
+            class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-gray-800 dark:text-white rounded-xl shadow-lg place-self-center"
+        >
             <div class="flex-col justify-between text-center">
-                <p>logo</p>
-                <h1>title</h1>
+                <svg
+                    class="w-[74px] h-[87px] place-self-center"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M47.7514 0.39337C48.9898 1.08913 49.5977 2.54631 49.2247 3.92478L41.0368 34.1786H70.9166C72.1444 34.1786 73.2551 34.9126 73.7445 36.0474C74.2338 37.1821 74.0084 38.5013 73.1707 39.4058L30.0041 86.0128C29.0367 87.0574 27.487 87.3024 26.2486 86.6066C25.0102 85.9109 24.4023 84.4537 24.7753 83.0752L32.9632 52.8214H3.0834C1.85562 52.8214 0.744856 52.0874 0.25553 50.9526C-0.233797 49.8179 -0.0084185 48.4987 0.829313 47.5942L43.9959 0.987186C44.9633 -0.0573626 46.513 -0.30239 47.7514 0.39337ZM10.1788 46.6071H37C37.961 46.6071 38.867 47.0587 39.4503 47.8283C40.0337 48.5979 40.2275 49.5975 39.9747 50.5318L34.0066 72.5837L63.8212 40.3929H37C36.039 40.3929 35.133 39.9413 34.5497 39.1717C33.9663 38.4021 33.7725 37.4025 34.0253 36.4682L39.9934 14.4163L10.1788 46.6071Z"
+                        fill="#FFC113"
+                    />
+                </svg>
+
+                <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="flex-col justify-between text-center">
-                <p>logo</p>
-                <h1>title</h1>
+                <svg
+                    class="w-[84px] h-[87px] place-self-center"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M39.7785 0.886707C41.0244 -0.295569 42.9756 -0.295569 44.2215 0.886707C52.9091 9.13005 64.6316 14.1812 77.5385 14.1812C77.7438 14.1812 77.9489 14.1799 78.1536 14.1773C79.5638 14.1598 80.8223 15.0607 81.2628 16.403C83.0399 21.8186 84 27.6018 84 33.6032C84 59.2487 66.4933 80.7893 42.8053 86.8978C42.277 87.0341 41.723 87.0341 41.1947 86.8978C17.5067 80.7893 0 59.2487 0 33.6032C0 27.6018 0.960067 21.8186 2.73717 16.403C3.17765 15.0607 4.43625 14.1598 5.84643 14.1773C6.05115 14.1799 6.25619 14.1812 6.46154 14.1812C19.3684 14.1812 31.0909 9.13005 39.7785 0.886707ZM8.21044 20.6277C7.07109 24.7548 6.46154 29.1054 6.46154 33.6032C6.46154 55.9317 21.5074 74.7473 42 80.4131C62.4926 74.7473 77.5385 55.9317 77.5385 33.6032C77.5385 29.1054 76.9289 24.7548 75.7896 20.6277C62.9207 20.2241 51.1635 15.3823 42 7.58388C32.8365 15.3823 21.0793 20.2241 8.21044 20.6277ZM56.8009 30.9689C58.2529 32.008 58.5892 34.0296 57.5521 35.4844L41.3982 58.1432C40.8462 58.9174 39.9822 59.4092 39.0357 59.4877C38.0892 59.5661 37.1563 59.2234 36.4847 58.5506L26.7924 48.8397C25.5307 47.5756 25.5307 45.526 26.7924 44.2619C28.0541 42.9978 30.0997 42.9978 31.3614 44.2619L38.357 51.2709L52.2941 31.7215C53.3312 30.2667 55.349 29.9298 56.8009 30.9689Z"
+                        fill="#FFC113"
+                    />
+                </svg>
+
+                <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="flex-col justify-between text-center">
-                <p>logo</p>
-                <h1>title</h1>
+                <svg
+                    class="w-[88px] h-[87px] place-self-center"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M44 6.76923C23.438 6.76923 6.76923 23.438 6.76923 44C6.76923 64.562 23.438 81.2308 44 81.2308C64.562 81.2308 81.2308 64.562 81.2308 44C81.2308 23.438 64.562 6.76923 44 6.76923ZM0 44C0 19.6995 19.6995 0 44 0C68.3005 0 88 19.6995 88 44C88 68.3005 68.3005 88 44 88C19.6995 88 0 68.3005 0 44ZM27.9299 29.9392C28.4161 28.9669 29.7139 27.0769 32.1538 27.0769C34.5938 27.0769 35.8916 28.9669 36.3778 29.9392C36.9652 31.114 37.2308 32.5 37.2308 33.8462C37.2308 35.1923 36.9652 36.5783 36.3778 37.7531C35.8916 38.7254 34.5938 40.6154 32.1538 40.6154C29.7139 40.6154 28.4161 38.7254 27.9299 37.7531C27.3425 36.5783 27.0769 35.1923 27.0769 33.8462C27.0769 32.5 27.3425 31.114 27.9299 29.9392ZM51.6222 29.9392C52.1084 28.9669 53.4062 27.0769 55.8462 27.0769C58.2861 27.0769 59.5839 28.9669 60.0701 29.9392C60.6575 31.114 60.9231 32.5 60.9231 33.8462C60.9231 35.1923 60.6575 36.5783 60.0701 37.7531C59.5839 38.7254 58.2861 40.6154 55.8462 40.6154C53.4062 40.6154 52.1084 38.7254 51.6222 37.7531C51.0348 36.5783 50.7692 35.1923 50.7692 33.8462C50.7692 32.5 51.0348 31.114 51.6222 29.9392ZM27.247 55.9664C28.5688 54.6447 30.7118 54.6447 32.0336 55.9664C38.6425 62.5753 49.3576 62.5753 55.9664 55.9664C57.2882 54.6447 59.4312 54.6447 60.753 55.9664C62.0748 57.2882 62.0748 59.4312 60.753 60.753C51.5006 70.0054 36.4994 70.0054 27.247 60.753C25.9252 59.4312 25.9252 57.2882 27.247 55.9664Z"
+                        fill="#FFC113"
+                    />
+                </svg>
+
+                <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
     </section>
 
-    <section class="w-full mt-20 h-32 bg-red-500">
+    <section class="relative w-full mt-20 h-96">
+        <div
+            class="flex bg-slate-800 h-80 w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5"
+        >
+            <div class="aspect-[9/16] absolute h-96 w-auto bg-red-800 ">
+                
+                img
 
-        <div class="flex w-full place-self-center max-w-screen-xl max-xl:w-full">
-            <div class="">img</div>
 
-            <div class="block">
+            </div>
+
+            <div class="w-1/3 h-80 bg-red-400 ">
+                
+                img
+
+
+            </div>
+
+            <div class="block w-auto">
                 <div class="">
                     description Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Ducimus voluptatibus voluptates sequi!
-                    Earum error aliquid, aliquam dolore, hic nulla quam odit
-                    commodi ab perspiciatis beatae a praesentium placeat
-                    accusamus quidem?
+
                 </div>
                 <div class="flex">
                     <div class="block w-4/5">
@@ -172,10 +223,11 @@ import { Head } from "@inertiajs/vue3";
                 </div>
             </div>
         </div>
-
     </section>
 
-    <section class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5">
+    <section
+        class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
+    >
         <div class="block w-2/3 h-64">
             <div class="flex">
                 <div class="w-1/2 h-32 bg-slate-400"></div>
@@ -186,7 +238,9 @@ import { Head } from "@inertiajs/vue3";
         <div class="w-1/3 bg-blue-400 h-64"></div>
     </section>
 
-    <section class="block mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5">
+    <section
+        class="block mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
+    >
         <h1 class="place-self-center">TITLE</h1>
         <div class="flex justify-between">
             <div class="flex-col text-center">
@@ -290,7 +344,9 @@ import { Head } from "@inertiajs/vue3";
         </div>
     </section>
 
-    <section class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5">
+    <section
+        class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
+    >
         <div class="flex-col justify-between w-1/2">
             <div class="block text-center">
                 <h1>title</h1>
