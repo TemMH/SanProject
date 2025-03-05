@@ -10,7 +10,7 @@ import { Head } from "@inertiajs/vue3";
     <Head title="YYYY" />
 
     <header>
-        <nav class="fixed mt-1 w-full px-4 lg:px-6 py-2">
+        <nav class="fixed mt-1 w-full px-4 lg:px-6 py-2 z-50">
             <div
                 class="flex justify-between items-center mx-auto dark:bg-white/30 backdrop-blur-md rounded-xl max-w-screen-xl px-5"
             >
@@ -191,25 +191,25 @@ import { Head } from "@inertiajs/vue3";
         </div>
     </section>
 
-    <section class="relative w-full mt-20 h-96">
+    <section class="w-full mt-20 h-96 bg-slate-800">
         <div
-            class="flex bg-slate-800 h-80 w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5"
+            class="flex h-full w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5"
         >
-            <div class="aspect-[9/16] absolute h-96 w-auto bg-red-800 ">
+
+
+
+        <div class="relative w-1/3 h-100% bg-red-400 z-10">
+                
+                <div class="aspect-[3/4] absolute h-auto w-5/6 bg-red-800  inset-x-0 mx-auto inset-y-0 my-auto">
                 
                 img
+
+                 </div>
 
 
             </div>
 
-            <div class="w-1/3 h-80 bg-red-400 ">
-                
-                img
-
-
-            </div>
-
-            <div class="block w-auto">
+            <div class="block w-2/3 bg-red-500">
                 <div class="">
                     description Lorem ipsum dolor sit amet consectetur
 
@@ -225,18 +225,78 @@ import { Head } from "@inertiajs/vue3";
         </div>
     </section>
 
+
+
     <section
-        class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
+        class="flex mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full" 
     >
-        <div class="block w-2/3 h-64">
-            <div class="flex">
-                <div class="w-1/2 h-32 bg-slate-400"></div>
-                <div class="w-1/2 h-32 bg-red-400"></div>
+
+        <div class="flex-col w-2/3">
+
+            <div class="flex h-1/3">
+
+                <div class=" bg-slate-400  aspect-square rounded-xl">
+                </div>
+                <div class=" bg-red-400 h-auto aspect-square  rounded-xl">
+
+                </div>
+
             </div>
-            <div class="bg-red-500 w-full h-32"></div>
+
+            <div class="bg-red-500 w-full h-auto aspect-[16/9]  rounded-xl">
+
+            </div>
+
         </div>
-        <div class="w-1/3 bg-blue-400 h-64"></div>
+
+        <div class="w-1/3 aspect-[9/16] bg-blue-400 h-auto  rounded-xl">
+        </div>
+
     </section>
+
+
+
+    <div class="mt-20 place-self-center w-full h-auto max-w-screen-xl grid grid-cols-3 grid-rows-2 gap-5 ">
+    <div class="col-span-1 aspect-square bg-blue-400">первыйКВ</div>
+    <div class="col-span-1 aspect-square bg-blue-400">ВторойКВ</div>
+    <div class="col-span-1 row-span-2 aspect-[9/16] bg-blue-400">правый</div>
+    <div class="col-span-2 aspect-[16/9] bg-blue-400">нижний</div>
+</div>
+
+
+    <section
+        class="flex mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full"
+    >
+
+        <div class="block w-2/3 h-auto">
+
+            <div class="flex">
+
+                <div class="w-1/2 bg-slate-400 h-auto aspect-square p-5">
+                    <div class="h-full w-full bg-black rounded-xl"></div>
+                </div>
+                <div class="w-1/2 bg-red-400 h-auto aspect-square p-5">
+                    <div class="h-full w-full bg-black rounded-xl"></div>
+
+                </div>
+
+            </div>
+
+            <div class="bg-red-500 w-full h-auto aspect-[16/9] p-5">
+                <div class="h-full w-full bg-black aspect-[16/9] rounded-xl"></div>
+
+            </div>
+
+        </div>
+
+        <div class="w-1/3 aspect-[9/16] bg-blue-400 h-auto p-5 ">
+            <div class="h-full w-full bg-black rounded-xl"></div>
+
+        </div>
+
+    </section>
+
+
 
     <section
         class="block mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
