@@ -231,70 +231,27 @@ import { Head } from "@inertiajs/vue3";
         class="flex mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full" 
     >
 
-        <div class="flex-col w-2/3">
+        <div class="flex flex-col justify-between">
 
-            <div class="flex h-1/3">
+            <div class="flex w-full justify-between">
 
-                <div class=" bg-slate-400  aspect-square rounded-xl">
-                </div>
-                <div class=" bg-red-400 h-auto aspect-square  rounded-xl">
-
-                </div>
-
-            </div>
-
-            <div class="bg-red-500 w-full h-auto aspect-[16/9]  rounded-xl">
+                    <div class="w-3/5 bg-slate-400 rounded-xl flex justify-center">
+                        <div class="h-full bg-red-900 aspect-square place-items-center"></div>
+                    </div>
+                    <div class="w-2/5 bg-red-400 place-items-end aspect-square rounded-xl"></div>
 
             </div>
 
+            <div class="bg-red-500 h-[28rem] aspect-[16/9] mt-9 rounded-xl z-40"></div>
+
         </div>
 
-        <div class="w-1/3 aspect-[9/16] bg-blue-400 h-auto  rounded-xl">
-        </div>
+        <div class="w-[28rem] aspect-[9/16] bg-blue-400 h-auto ml-9 rounded-xl"></div>
 
     </section>
 
 
 
-    <div class="mt-20 place-self-center w-full h-auto max-w-screen-xl grid grid-cols-3 grid-rows-2 gap-5 ">
-    <div class="col-span-1 aspect-square bg-blue-400">первыйКВ</div>
-    <div class="col-span-1 aspect-square bg-blue-400">ВторойКВ</div>
-    <div class="col-span-1 row-span-2 aspect-[9/16] bg-blue-400">правый</div>
-    <div class="col-span-2 aspect-[16/9] bg-blue-400">нижний</div>
-</div>
-
-
-    <section
-        class="flex mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full"
-    >
-
-        <div class="block w-2/3 h-auto">
-
-            <div class="flex">
-
-                <div class="w-1/2 bg-slate-400 h-auto aspect-square p-5">
-                    <div class="h-full w-full bg-black rounded-xl"></div>
-                </div>
-                <div class="w-1/2 bg-red-400 h-auto aspect-square p-5">
-                    <div class="h-full w-full bg-black rounded-xl"></div>
-
-                </div>
-
-            </div>
-
-            <div class="bg-red-500 w-full h-auto aspect-[16/9] p-5">
-                <div class="h-full w-full bg-black aspect-[16/9] rounded-xl"></div>
-
-            </div>
-
-        </div>
-
-        <div class="w-1/3 aspect-[9/16] bg-blue-400 h-auto p-5 ">
-            <div class="h-full w-full bg-black rounded-xl"></div>
-
-        </div>
-
-    </section>
 
 
 
