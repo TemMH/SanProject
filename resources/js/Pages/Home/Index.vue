@@ -9,11 +9,14 @@ import { Head } from "@inertiajs/vue3";
     <!-- <Layout> -->
     <Head title="YYYY" />
 
-    <header>
-        <nav class="fixed mt-1 w-full px-4 lg:px-6 py-2 z-50">
-            <div
-                class="flex justify-between items-center mx-auto dark:bg-white/30 backdrop-blur-md rounded-xl max-w-screen-xl px-5"
-            >
+    <header
+    class="fixed mt-1 w-full px-4 lg:px-6 py-2 z-50"
+    >
+
+        <nav
+        class="flex justify-between items-center mx-auto dark:bg-white/30 backdrop-blur-md rounded-xl max-w-screen-xl px-5"        
+        >
+
                 <a href="" class="flex items-center">
                     <span
                         class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
@@ -46,8 +49,9 @@ import { Head } from "@inertiajs/vue3";
                         <span class="sr-only">Open main menu</span>
                     </button>
                 </div>
-            </div>
+                
         </nav>
+
     </header>
 
     <section
@@ -191,21 +195,17 @@ import { Head } from "@inertiajs/vue3";
         </div>
     </section>
 
-    <section class="w-full mt-20 h-96 bg-slate-800">
-        <div
-            class="flex h-full w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5"
-        >
+    <section
+        class="w-full mt-20 h-96 bg-slate-800"
+    >
 
+        <div class="flex h-full w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5">
 
-
-        <div class="relative w-1/3 h-100% bg-red-400 z-10">
-                
-                <div class="aspect-[3/4] absolute h-auto w-5/6 bg-red-800  inset-x-0 mx-auto inset-y-0 my-auto">
-                
-                img
-
-                 </div>
-
+            <div class="relative w-1/3 h-100% bg-red-400 z-10">
+                    
+                    <div class="aspect-[3/4] absolute h-auto w-5/6 bg-red-800  inset-x-0 mx-auto inset-y-0 my-auto rounded-xl">
+                    img
+                    </div>
 
             </div>
 
@@ -222,10 +222,10 @@ import { Head } from "@inertiajs/vue3";
                     <div class="w-1/5 bg-blue-400"></div>
                 </div>
             </div>
+
         </div>
+
     </section>
-
-
 
     <section
         class="flex mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full" 
@@ -250,11 +250,6 @@ import { Head } from "@inertiajs/vue3";
 
     </section>
 
-
-
-
-
-
     <section
         class="block mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
     >
@@ -262,7 +257,7 @@ import { Head } from "@inertiajs/vue3";
         <div class="flex justify-between">
             <div class="flex-col text-center">
                 <div
-                    class="w-12 h-12 rounded-lg place-self-center bg-yellow-400 content-center"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center"
                 >
                     1
                 </div>
@@ -271,7 +266,7 @@ import { Head } from "@inertiajs/vue3";
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="w-12 h-12 rounded-lg place-self-center bg-yellow-400 content-center"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center"
                 >
                     2
                 </div>
@@ -280,7 +275,7 @@ import { Head } from "@inertiajs/vue3";
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="w-12 h-12 rounded-lg place-self-center bg-yellow-400 content-center"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center"
                 >
                     3
                 </div>
@@ -289,7 +284,7 @@ import { Head } from "@inertiajs/vue3";
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="w-12 h-12 rounded-lg place-self-center bg-yellow-400 content-center"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center"
                 >
                     4
                 </div>
@@ -299,8 +294,11 @@ import { Head } from "@inertiajs/vue3";
         </div>
     </section>
 
-    <section class="container mx-auto text-center mt-20">
-        <h1 class="place-self-center">TITLE</h1>
+    <section
+    class="mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full"
+    >
+    
+        <h1 class="place-self-center text-center">TITLE</h1>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center">
             <img
                 alt="Partner Logo 1"
@@ -359,12 +357,15 @@ import { Head } from "@inertiajs/vue3";
                 width="150"
             />
         </div>
+
     </section>
 
     <section
         class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
     >
-        <div class="flex-col justify-between w-1/2">
+        <div class="flex flex-col justify-around w-1/2 pr-20">
+
+
             <div class="block text-center">
                 <h1>title</h1>
                 <p>
@@ -392,8 +393,12 @@ import { Head } from "@inertiajs/vue3";
                     rem cum voluptatum placeat temporibus quos.
                 </p>
             </div>
+
+
         </div>
-        <div class="w-1/2">map</div>
+        <div class="w-1/2 aspect-[4/3]">
+            <div class="size-full bg-black rounded-xl"></div>
+        </div>
     </section>
 
     <!-- </Layout> -->
