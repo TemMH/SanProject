@@ -4,7 +4,6 @@ import { Head } from "@inertiajs/vue3";
 
 // defineProps({ user: Object })
 </script>
-
 <template>
     <!-- <Layout> -->
     <Head title="YYYY" />
@@ -265,7 +264,7 @@ stroke="#facc15" stroke-width="10"/>
         <div class="flex justify-between">
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
                 >
                     1
                 </div>
@@ -274,7 +273,7 @@ stroke="#facc15" stroke-width="10"/>
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
                 >
                     2
                 </div>
@@ -283,7 +282,7 @@ stroke="#facc15" stroke-width="10"/>
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
                 >
                     3
                 </div>
@@ -292,7 +291,7 @@ stroke="#facc15" stroke-width="10"/>
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
                 >
                     4
                 </div>
@@ -405,7 +404,11 @@ stroke="#facc15" stroke-width="10"/>
 
         </div>
         <div class="w-1/2 aspect-[4/3]">
-            <div class="size-full bg-black rounded-xl"></div>
+            <div class="overflow-hidden size-full bg-black rounded-xl">
+
+<div id="map" class="" style="width:100%; height:100%"></div>                
+
+            </div>
         </div>
     </section>
 
