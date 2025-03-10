@@ -23,7 +23,7 @@
         <div
             class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-gray-800 dark:text-white dark:shadow-white dark:shadow-lg rounded-xl shadow-lg place-self-center"
         >
-            <div class="flex-col justify-between text-center">
+            <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
                     class="w-[74px] h-[87px] place-self-center"
                     fill="none"
@@ -40,7 +40,7 @@
                 <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="flex-col justify-between text-center">
+            <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
                     class="w-[84px] h-[87px] place-self-center"
                     fill="none"
@@ -57,7 +57,7 @@
                 <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="flex-col justify-between text-center">
+            <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
                     class="w-[88px] h-[87px] place-self-center"
                     fill="none"

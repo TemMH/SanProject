@@ -47,10 +47,13 @@
 
 </template>
 <script>
+import LightMarker from "@/assets/markers/light_marker.svg";
+import DarkMarker from "@/assets/markers/dark_marker.svg";
 
 export default {
   data() {
     return {
+      marker: DarkMarker,
       map: null,
     };
   },
@@ -63,7 +66,7 @@ export default {
       });
 
       const mapicon = DG.icon({
-        iconUrl: 'light_maker.svg', // SVG *Фикс*
+        iconUrl: this.marker, // SVG *Фикс*
         iconAnchor: [32, 64],
         popupAnchor: [0, 24],
         className: 'map-icon',
