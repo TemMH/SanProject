@@ -1,6 +1,6 @@
 <template>
     <section
-        class="flex mt-20 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full"
+        class="flex mt-24 place-self-center w-full h-auto max-w-screen-xl max-xl:w-full"
     >
         <div class="flex flex-col justify-between">
             <div class="flex w-full justify-between">

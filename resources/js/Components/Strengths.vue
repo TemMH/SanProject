@@ -1,7 +1,7 @@
 <template>
 
 <section
-        class="flex mt-20 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full font-mono text-xl cursor-default"
+        class="flex mt-24 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full font-mono text-xl cursor-default"
     >
         <div class="block  w-1/3 h-24 text-center">
             <h1 class="text-3xl font-bold uppercase dark:text-white">20%</h1>

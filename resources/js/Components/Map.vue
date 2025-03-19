@@ -1,6 +1,6 @@
 <template lang="">
     <section
-        class="flex mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5 dark:text-white"
+        class="flex mt-24 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5 dark:text-white"
     >
         <div class="flex flex-col justify-around w-1/2 pr-20">
             <div class="block text-center">

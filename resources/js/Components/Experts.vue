@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full mt-20 h-96 bg-slate-800">
+    <section class="w-full mt-24 h-96 bg-slate-800">
         <div
             class="flex h-full w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5"
         >

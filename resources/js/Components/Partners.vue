@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative overflow-hidden mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
+        class="relative overflow-hidden mt-24 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
     >
         <div
             ref="logosContainer"
