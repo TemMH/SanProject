@@ -1,24 +1,24 @@
 <template>
 
 <section
-        class="flex mt-20 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full font-mono text-xl"
+        class="flex mt-20 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full font-mono text-xl cursor-default"
     >
-        <div class="block bg-pink-200 w-1/3 h-24 text-center">
-            <h1 class="text-3xl font-bold">20%</h1>
-            <p class="pt-5">Lorem, ipsum dolor</p>
+        <div class="block  w-1/3 h-24 text-center">
+            <h1 class="text-3xl font-bold uppercase dark:text-white">20%</h1>
+            <p class="pt-5 font-semibold dark:text-slate-100">будут описаны максимально</p>
         </div>
-        <div class="block bg-pink-500 w-1/3 h-24 text-center">
-            <h1 class="text-3xl font-bold">3 500М2</h1>
-            <p class="pt-5">Lorem, ipsum dolor</p>
+        <div class="block  w-1/3 h-24 text-center">
+            <h1 class="text-3xl font-bold uppercase dark:text-white">3 500М2</h1>
+            <p class="pt-5 font-semibold dark:text-slate-100">будут описаны максимально</p>
         </div>
-        <div class="block bg-pink-200 w-1/3 h-24 text-center">
-            <h1 class="text-3xl font-bold">3 ДНЯ</h1>
-            <p class="pt-5">Lorem, ipsum dolor</p>
+        <div class="block  w-1/3 h-24 text-center">
+            <h1 class="text-3xl font-bold uppercase dark:text-white">3 ДНЯ</h1>
+            <p class="pt-5 font-semibold dark:text-slate-100">будут описаны максимально</p>
         </div>
     </section>
 
     <section
-        class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full"
+        class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full cursor-default"
     >
         <div
             class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-gray-800 dark:text-white dark:shadow-white dark:shadow-lg rounded-xl shadow-lg place-self-center"
@@ -37,8 +37,10 @@
                     />
                 </svg>
 
-                <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h1 class="text-3xl font-bold py-5 uppercase ">Скорость</h1>
+                <p>
+                    И нет сомнений, что тщательные исследования конкурентов будут описаны максимально подробно.
+                </p>
             </div>
             <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
@@ -54,8 +56,9 @@
                     />
                 </svg>
 
-                <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h1 class="text-3xl font-bold py-5 uppercase ">Надёжность</h1>
+                <p>И нет сомнений, что тщательные исследования конкурентов будут описаны максимально подробно. 
+                </p>
             </div>
             <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
@@ -71,8 +74,9 @@
                     />
                 </svg>
 
-                <h1 class="text-3xl font-bold py-5 uppercase ">Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h1 class="text-3xl font-bold py-5 uppercase ">Поддержка</h1>
+                <p>И нет сомнений, что тщательные исследования конкурентов будут описаны максимально подробно. 
+                </p>
             </div>
         </div>
     </section>

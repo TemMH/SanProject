@@ -1,23 +1,23 @@
 <template >
 
 <section
-        class="flex pt-20 place-self-center max-w-screen-xl max-xl:w-full  font-mono text-3xl"
+        class="flex pt-20 place-self-center max-w-screen-xl max-xl:w-full  "
     >
         <div
-            class="flex-col justify-between w-1/3 h-auto bg-red-500 text-center"
+            class="flex-col justify-between w-1/3 h-auto bg-red-500 text-center cursor-default"
         >
             <div>
-                <h1>Title Ipsum</h1>
+                <h1 class="text-3xl font-bold uppercas">Солнечных дней</h1>
             </div>
             <div class="py-5">
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+                    Принимая во внимание показатели успешности, существующая теория говорит о возможностях первоочередных требований. В частности, понимание сути ресурсосберегающих технологий говорит о возможностях поэтапного и последовательного развития общества.
                 </p>
             </div>
 
             <div class="">
                 <button class="aspect-square rounded-full h-24 bg-white">
-                    Кнопка
+                    Перейти
                 </button>
             </div>
         </div>

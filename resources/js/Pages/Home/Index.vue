@@ -14,7 +14,7 @@ import Welcome from "../../Components/Welcome.vue";
 </script>
 <template>
     <!-- <Layout> -->
-    <Head title="YYYY" />
+    <Head title="YYYY"  />
 
     <NavBar />
 

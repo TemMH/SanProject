@@ -1,7 +1,7 @@
 <template>
 
 <section
-        class="relative block mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5"
+        class="relative block mt-20 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5 cursor-default"
     >
 
 
@@ -11,11 +11,12 @@ class="absolute top-5 left-0 z-10 w-full max-w-screen-xl max-xl:px-10" viewBox="
 stroke="#facc15" stroke-width="10"/>
 </svg>
 
-        <h1 class="place-self-center">TITLE</h1>
+        <h1 class="place-self-center text-3xl font-bold uppercase dark:text-white">Как мы работаем</h1>
+        
         <div class="flex justify-between">
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
                 >
                     1
                 </div>
@@ -24,7 +25,7 @@ stroke="#facc15" stroke-width="10"/>
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
                 >
                     2
                 </div>
@@ -33,7 +34,7 @@ stroke="#facc15" stroke-width="10"/>
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
                 >
                     3
                 </div>
@@ -42,7 +43,7 @@ stroke="#facc15" stroke-width="10"/>
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-2xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
                 >
                     4
                 </div>

@@ -14,21 +14,21 @@
                     href="#"
                     class="aspect-square overflow-hidden rounded-full focus:ring-4 transform transition duration-500 hover:scale-105  focus:ring-primary-300 p-1 dark:bg-[#1BD741]" 
                     >
-                    <img class="object-fill" :src="whatsapp" alt="" />
+                    <!-- <img class="object-fill" :src="whatsapp" alt="" /> -->
                     <!-- Whatsapp -->
                 </a>
                 <a
                     href="#"
                     class="aspect-square overflow-hidden rounded-full focus:ring-4 transform transition duration-500 hover:scale-105  focus:ring-primary-300 p-1 dark:bg-[#61A8DE]" 
                     >
-                    <img class="object-fill" :src="telegram" alt="" />
+                    <!-- <img class="object-fill" :src="telegram" alt="" /> -->
                     <!-- Telegram -->
                 </a>
                 <a
                     href="#"
                     class="aspect-square overflow-hidden rounded-full focus:ring-4  transform transition duration-500 hover:scale-105 focus:ring-primary-300 p-1 dark:bg-[#44678D]" 
                     >
-                    <img class="object-fill" :src="vkontakte" alt="" />
+                    <!-- <img class="object-fill" :src="vkontakte" alt="" /> -->
                     <!-- Vkontakte -->
                 </a>
             </div>
@@ -36,16 +36,16 @@
     </header>
 </template>
 <script>
-import Whatsapp from "@/assets/icons/whatsapp_icon.svg";
-import Telegram from "@/assets/icons/telegram_icon.svg";
-import Vkontakte from "@/assets/icons/vkontakte_icon.svg";
+// import Whatsapp from "@/assets/icons/whatsapp_icon.svg";
+// import Telegram from "@/assets/icons/telegram_icon.svg";
+// import Vkontakte from "@/assets/icons/vkontakte_icon.svg";
 
 export default {
     data() {
         return {
-            whatsapp: Whatsapp,
-            telegram: Telegram,
-            vkontakte: Vkontakte,
+            // whatsapp: Whatsapp,
+            // telegram: Telegram,
+            // vkontakte: Vkontakte,
         };
     },
 };
