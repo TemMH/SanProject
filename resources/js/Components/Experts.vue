@@ -7,7 +7,7 @@
                 <div
                     class="aspect-[3/4] overflow-hidden absolute w-5/6 bg-red-800 inset-x-0 mx-auto inset-y-0 my-auto rounded-xl transform transition duration-500 hover:scale-105"
                 >
-                    <!-- <img :src="imageExpert" class="w-full h-full object-cover" alt="Example Image"> -->
+                    <img :src="imageExpert" class="w-full h-full object-cover" alt="Example Image">
                 </div>
             </div>
 
@@ -31,12 +31,12 @@
 </template>
 
 <script>
-// import Experts1 from '@/assets/experts/example_experts.jpg';
+import Experts1 from '@/Assets/Experts/example_experts.jpg';
 
 export default {
     data() {
         return {
-            // imageExpert: Experts1,
+            imageExpert: Experts1,
         };
     },
 };

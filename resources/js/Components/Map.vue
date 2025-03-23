@@ -38,13 +38,13 @@
     </section>
 </template>
 <script>
-// import LightMarker from "@/assets/markers/light_marker.svg";
-// import DarkMarker from "@/assets/markers/dark_marker.svg";
+import LightMarker from "@/Assets/Markers/light_marker.svg";
+import DarkMarker from "@/Assets/Markers/dark_marker.svg";
 
 export default {
     data() {
         return {
-            // marker: DarkMarker,
+            marker: DarkMarker,
             map: null,
         };
     },

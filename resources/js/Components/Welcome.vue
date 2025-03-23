@@ -42,7 +42,9 @@
                     </clipPath>
                 </defs>
                 <!-- фото первого свг -->
-                <image href="#" clip-path="url(#clip-shape-first)" />
+                <image :href="vertical_img"  clip-path="url(#clip-shape-first)" />
+             
+
             </svg>
 
             <svg
@@ -60,7 +62,8 @@
                     </clipPath>
                 </defs>
                 <!-- фото второго свг -->
-                <image href="#" clip-path="url(#clip-shape-second)" />
+                <image :href="square_img" clip-path="url(#clip-shape-second)" />
+
             </svg>
             <svg
                 class="h-auto w-1/3 absolute right-10"
@@ -77,12 +80,25 @@
                     </clipPath>
                 </defs>
                 <!-- фото третьего свг -->
-                <image href="#" clip-path="url(#clip-shape-third)" />
+                <image :href="horizontal_img" clip-path="url(#clip-shape-third)" />
+
             </svg>
         </div>
     </section>
 </template>
 <script>
-export default {};
+import VerticalImg from '@/Assets/Gallery/example_vertical.png'
+import SquareImg from '@/Assets/Gallery/example_square.png'
+import HorizontalImg from '@/Assets/Gallery/example_horizontal.png'
+
+export default {
+    data() {
+        return {
+            vertical_img: VerticalImg,
+            square_img: SquareImg,
+            horizontal_img: HorizontalImg,
+        };
+    },
+};
 </script>
 <style></style>

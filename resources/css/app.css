@@ -8,3 +8,11 @@ body{
     background-color: #F8F7FC;
 
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
