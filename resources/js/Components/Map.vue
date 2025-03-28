@@ -1,40 +1,34 @@
 <template lang="">
     <section
-        class="flex mt-24 place-self-center w-full max-w-screen-xl max-xl:w-full max-xl:px-5 dark:text-white"
+        class="flex mt-24 place-self-center w-full max-w-screen-2xl max-xl:w-full max-w-2xl:w-96 dark:text-white"
     >
-        <div class="flex flex-col justify-around w-1/2 pr-20">
-            <div class="block text-center">
-                <h1 class="text-3xl font-bold">Небо темнеет</h1>
-                <p>
-                    Есть над чем задуматься: действия представителей оппозиции,
-                    превозмогая сложившуюся непростую экономическую ситуацию,
-                    обнародованы.
-                </p>
-            </div>
-            <div class="block text-center">
-                <h1 class="text-3xl font-bold">Небо темнеет</h1>
-                <p>
-                    Безусловно, синтетическое тестирование обеспечивает
-                    актуальность существующих финансовых и административных
-                    условий.
-                </p>
-            </div>
-            <div class="block text-center">
-                <h1 class="text-3xl font-bold">Небо темнеет</h1>
-                <p>
-                    Господа, высокое качество позиционных исследований создаёт
-                    необходимость включения в производственный план целого ряда
-                    внеочередных мероприятий с учётом комплекса как
-                    самодостаточных, так и внешне зависимых концептуальных
-                    решений.
-                </p>
-            </div>
-        </div>
-        <div class="w-1/2 aspect-[4/3]">
-            <div class="overflow-hidden size-full bg-black rounded-xl">
+    <div class="w-full aspect-[21/9]">
+            <div class="overflow-hidden relative size-full bg-black rounded-xl">
+
+                <div class="absolute flex flex-col justify-around w-4/12 translate-x-24 top-1/2 transform -translate-y-1/2 p-10 rounded-xl dark:bg-white dark:text-black z-10">
+                    <div class="block text-center">
+                        <h1 class="text-3xl font-bold">Небо темнеет</h1>
+                        <p>
+                            Есть над чем задуматься: действия представителей оппозиции,
+                            превозмогая сложившуюся непростую экономическую ситуацию,
+                            обнародованы.
+                        </p>
+                    </div>
+                    <div class="block text-center">
+                        <h1 class="text-3xl font-bold">Небо темнеет</h1>
+                        <p>
+                            Господа, высокое качество позиционных исследований создаёт
+                            необходимость включения в производственный план целого ряда
+                            внеочередных мероприятий с учётом комплекса как
+                            самодостаточных, так и внешне зависимых концептуальных
+                            решений.
+                        </p>
+                    </div>
+                </div>
                 <div id="map" class="" style="width: 100%; height: 100%"></div>
             </div>
         </div>
+
     </section>
 </template>
 <script>
@@ -51,7 +45,7 @@ export default {
     mounted() {
         DG.then(() => {
             this.map = DG.map("map", {
-                center: [52.293448, 104.296623],
+                center: [52.293715, 104.291079],
                 zoom: 16,
                 scrollWheelZoom: false,
             });
@@ -59,7 +53,7 @@ export default {
             const mapicon = DG.icon({
                 iconUrl: this.marker, // SVG *Фикс*
                 iconAnchor: [32, 64],
-                popupAnchor: [0, 24],
+                popupAnchor: [0, 0],
                 className: "map-icon",
                 iconSize: [64, 64],
             });
