@@ -4,26 +4,47 @@
             class="flex h-full w-full place-self-center max-w-screen-xl max-xl:w-full max-xl:px-5"
         >
             <div class="relative w-1/3 h-full z-10">
-                <div
-                    class="aspect-[3/4] overflow-hidden absolute w-5/6 bg-red-800 inset-x-0 mx-auto inset-y-0 my-auto rounded-xl transform transition duration-500 hover:scale-105"
-                >
-                    <img :src="imageExpert" class="w-full h-full object-cover" alt="Example Image">
-                </div>
+                <transition name="fade-slide" mode="out-in">
+                    <div
+                        :key="experts[currentExpert].image"
+                        class="aspect-[3/4] overflow-hidden absolute w-5/6 inset-x-0 mx-auto inset-y-0 my-auto rounded-xl transform transition-transform duration-500 hover:scale-105"
+                    >
+                        <img
+                            :src="experts[currentExpert].image"
+                            class="w-full h-full object-cover "
+                            alt="Example Image"
+                        />
+                    </div>
+                </transition>
             </div>
 
-            <div class="flex flex-col justify-between w-2/3 text-white text-lg py-20">
-                <div class="pr-48">
-                    Приятно, граждане, наблюдать, как явные признаки победы
-                    институционализации заблокированы в рамках своих собственных
-                    рациональных ограничений. Лишь акционеры крупнейших компаний
-                    преданы социально-демократической анафеме.
-                </div>
-                <div class="flex">
-                    <div class="block w-4/5">
-                        <p>Зимина Марина</p>
-                        <p>Дизайнер</p>
+            <div
+                class="flex flex-col justify-between w-2/3 text-white text-lg py-20"
+            >
+                <transition name="text-slide" mode="out-in">
+                    <div class="pr-48" :key="experts[currentExpert].text">
+                        {{ experts[currentExpert].text }}
                     </div>
-                    <button class="w-1/5 bg-blue-400 content-center rounded-xl">Дальше</button>
+                </transition>
+
+                <div class="flex">
+                    <transition name="text-slide" mode="out-in">
+                        <div
+                            class="block w-4/5"
+                            :key="experts[currentExpert].name"
+                        >
+                            <p>{{ experts[currentExpert].name }}</p>
+                            <p>{{ experts[currentExpert].position }}</p>
+                        </div>
+                    </transition>
+
+                    <button
+                        class="w-1/5 bg-blue-400 content-center rounded-xl"
+                        @click="nextExpert"
+                        :disabled="isTransitioning"
+                    >
+                        Дальше
+                    </button>
                 </div>
             </div>
         </div>
@@ -31,13 +52,88 @@
 </template>
 
 <script>
-import Experts1 from '@/Assets/Experts/example_experts.jpg';
+import Experts1 from "@/Assets/Experts/example_experts1.jpg";
+import Experts2 from "@/Assets/Experts/example_experts2.avif";
+import Experts3 from "@/Assets/Experts/example_experts3.webp";
 
 export default {
     data() {
         return {
-            imageExpert: Experts1,
+            experts: [
+                {
+                    image: Experts1,
+                    name: "Зимина Марина",
+                    position: "Дизайнер",
+                    text: "Приятно, граждане, наблюдать, как явные признаки победы институционализации заблокированы в рамках своих собственных рациональных ограничений.",
+                },
+                {
+                    image: Experts2,
+                    name: "Александр Иванов",
+                    position: "Разработчик",
+                    text: "Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий играет важную роль в формировании системы массового участия.",
+                },
+                {
+                    image: Experts3,
+                    name: "Екатерина Смирнова",
+                    position: "Маркетолог",
+                    text: "Таким образом, реализация намеченных плановых заданий способствует подготовке и реализации новых принципов формирования материально-технической и кадровой базы.",
+                },
+            ],
+            currentExpert: 0,
         };
+    },
+    methods: {
+        nextExpert() {
+            if (this.isTransitioning) return;
+
+            this.isTransitioning = true; // Блокируем кнопку
+
+            this.currentExpert = (this.currentExpert + 1) % this.experts.length;
+
+            setTimeout(() => {
+                this.isTransitioning = false;
+            }, 1200); // Разблокируем кнопку после задержки
+        },
     },
 };
 </script>
+
+<style scoped>
+/* Анимация исчезновения */
+.fade-slide-leave-active,
+.text-slide-leave-active,
+.fade-slide-enter-active,
+.text-slide-enter-active {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Фото анимация */
+.fade-slide-leave-to {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.fade-slide-enter-from {
+    opacity: 0;
+    transform: translateX(30px);
+}
+.fade-slide-enter-to {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Текстовая анимация */
+.text-slide-leave-to {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.text-slide-enter-from {
+    opacity: 0;
+    transform: translateX(20px);
+}
+.text-slide-enter-to {
+    opacity: 1;
+    transform: translateX(0);
+}
+</style>
