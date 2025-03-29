@@ -3,9 +3,9 @@
         class="flex mt-24 place-self-center w-full max-w-screen-2xl max-xl:w-full max-w-2xl:w-96 dark:text-white"
     >
     <div class="w-full aspect-[21/9]">
-            <div class="overflow-hidden relative size-full bg-black rounded-xl">
+            <div class="overflow-hidden relative size-full bg-black rounded-t-xl">
 
-                <div class="absolute flex flex-col justify-around w-4/12 translate-x-24 top-1/2 transform -translate-y-1/2 p-10 rounded-xl dark:bg-white dark:text-black z-10">
+                <div class="absolute flex flex-col justify-around w-4/12 translate-x-24 top-1/2 transform -translate-y-1/2 p-10 rounded-xl bg-white text-black dark:bg-[#222425] dark:text-white z-10">
                     <div class="block text-center">
                         <h1 class="text-3xl font-bold">Небо темнеет</h1>
                         <p>

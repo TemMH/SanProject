@@ -21,7 +21,7 @@
         class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full cursor-default"
     >
         <div
-            class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-gray-800 dark:text-white dark:shadow-white dark:shadow-lg rounded-xl shadow-lg place-self-center"
+            class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-[#222425] dark:text-white dark:shadow-white dark:shadow-lg rounded-xl shadow-lg place-self-center"
         >
             <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
@@ -62,7 +62,7 @@
             </div>
             <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
-                    class="w-[88px] h-[87px] place-self-center"
+                    class="w-[88px] h-[88px] place-self-center"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                 >

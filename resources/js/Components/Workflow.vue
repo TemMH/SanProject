@@ -26,7 +26,7 @@
         <div class="flex justify-between dark:text-white ">
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white dark:text-[#181A1C] text-3xl font-black"
                 >
                     1
                 </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white dark:text-[#181A1C] text-3xl font-black"
                 >
                     2
                 </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white dark:text-[#181A1C] text-3xl font-black"
                 >
                     3
                 </div>
@@ -76,7 +76,7 @@
 
             <div class="flex-col text-center">
                 <div
-                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white text-3xl font-black"
+                    class="size-20 rounded-lg place-self-center bg-yellow-400 content-center relative z-20 text-white dark:text-[#181A1C] text-3xl font-black"
                 >
                     4
                 </div>
