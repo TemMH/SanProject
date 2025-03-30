@@ -25,7 +25,8 @@
                         </p>
                     </div>
                 </div>
-                <div id="map" class="" style="width: 100%; height: 100%"></div>
+                <div id="map"
+                 class="" style="width: 100%; height: 100%"></div>
             </div>
         </div>
 
@@ -38,11 +39,13 @@ import DarkMarker from "@/Assets/Markers/dark_marker.svg";
 export default {
     data() {
         return {
-            marker: DarkMarker,
+            marker: null,
             map: null,
         };
     },
     mounted() {
+        this.setThemeMarker();
+
         DG.then(() => {
             this.map = DG.map("map", {
                 center: [52.293715, 104.291079],
@@ -50,12 +53,35 @@ export default {
                 scrollWheelZoom: false,
             });
 
+            this.addMarker();
+        });
+
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", this.setThemeMarker);
+    },
+    methods: {
+        setThemeMarker() {
+            const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            this.marker = isDark ?  LightMarker : DarkMarker;
+
+            if (this.map) {
+                this.addMarker();
+            }
+        },
+        addMarker() {
+            if (!this.map || !this.marker) return;
+
             const mapicon = DG.icon({
-                iconUrl: this.marker, // SVG *Фикс*
+                iconUrl: this.marker,
                 iconAnchor: [32, 64],
                 popupAnchor: [0, 0],
                 className: "map-icon",
                 iconSize: [64, 64],
+            });
+
+            this.map.eachLayer((layer) => {
+                if (layer instanceof DG.Marker) {
+                    this.map.removeLayer(layer);
+                }
             });
 
             DG.marker([52.293448, 104.296623], { icon: mapicon })
@@ -63,7 +89,7 @@ export default {
                 .bindPopup(
                     "<div><h2>IRKUTSUN</h2><br/>Находимся в <b>Фортуне</b><br/>на <b>2 этаже 123.п</b></div>"
                 );
-        });
+        },
     },
 };
 </script>

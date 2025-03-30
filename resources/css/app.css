@@ -16,3 +16,10 @@ html, body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+/* dark version for map */
+@media (prefers-color-scheme: dark) {
+    .leaflet-tile-pane {
+        filter: hue-rotate(180deg) invert(1) grayscale(85%);
+    }
+}
