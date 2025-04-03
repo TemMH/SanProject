@@ -1,7 +1,7 @@
 <template>
 
 <section
-        class="flex mt-24 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full font-mono text-xl cursor-default"
+        class="flex mt-24 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full text-xl cursor-default"
     >
         <div class="block  w-1/3 h-24 text-center">
             <h1 class="text-3xl font-bold uppercase dark:text-white">20%</h1>
@@ -21,7 +21,7 @@
         class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full cursor-default"
     >
         <div
-            class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-[#222425] dark:text-white dark:shadow-white dark:shadow-lg rounded-xl shadow-lg place-self-center"
+            class="flex justify-around w-5/6 h-auto py-10 bg-slate-50 text-black dark:bg-[#222425] dark:text-white dark:shadow-white dark:shadow-lg rounded-xl shadow-lg place-self-center gap-5 px-5"
         >
             <div class="flex-col justify-between text-center transform transition duration-500 hover:scale-110"> <!-- *Fix transform 1024px(laptop) -->
                 <svg
@@ -37,7 +37,7 @@
                     />
                 </svg>
 
-                <h1 class="text-3xl font-bold py-5 uppercase ">Скорость</h1>
+                <h1 class="text-3xl font-bold pt-5 pb-1 uppercase ">Скорость</h1>
                 <p>
                     И нет сомнений, что тщательные исследования конкурентов будут описаны максимально подробно.
                 </p>
@@ -56,7 +56,7 @@
                     />
                 </svg>
 
-                <h1 class="text-3xl font-bold py-5 uppercase ">Надёжность</h1>
+                <h1 class="text-3xl font-bold pt-5 pb-1 uppercase ">Надёжность</h1>
                 <p>И нет сомнений, что тщательные исследования конкурентов будут описаны максимально подробно. 
                 </p>
             </div>
@@ -74,7 +74,7 @@
                     />
                 </svg>
 
-                <h1 class="text-3xl font-bold py-5 uppercase ">Поддержка</h1>
+                <h1 class="text-3xl font-bold pt-5 pb-1 uppercase ">Поддержка</h1>
                 <p>И нет сомнений, что тщательные исследования конкурентов будут описаны максимально подробно. 
                 </p>
             </div>

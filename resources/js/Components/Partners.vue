@@ -1,16 +1,13 @@
 <template>
     <div
-        class="relative overflow-hidden mt-48 place-self-center w-full  max-xl:px-5"
-    >
-        <div
-            ref="logosContainer"
-            class="flex space-x-8"
-            :style="{ transform: `translateX(${offset}px)` }"
-        >
+        class=" mt-48 w-full flex flex-row items-center overflow-hidden">
+
+        <div class="flex flex-row items-center justify-start  grow-0 shrink-0" id="ticker-track">
+            
             <div
                 v-for="(logo, index) in visibleLogos"
                 :key="index"
-                class="flex-shrink-0"
+                class="px-4"
             >
                 <a :href="logo.url" target="_blank" rel="noopener noreferrer">
                     <img
@@ -22,8 +19,32 @@
                     />
                 </a>
             </div>
+
         </div>
+
+        <div class="flex flex-row items-center justify-start  grow-0 shrink-0" id="ticker-track">
+            
+            <div
+                v-for="(logo, index) in visibleLogos"
+                :key="index"
+                class="px-4"
+            >
+                <a :href="logo.url" target="_blank" rel="noopener noreferrer">
+                    <img
+                        :alt="logo.alt"
+                        class="rounded-lg shadow-lg"
+                        height="100"
+                        :src="logo.src"
+                        width="150"
+                    />
+                </a>
+            </div>
+
+        </div>
+
+
     </div>
+
 </template>
 
 <script>
@@ -70,34 +91,24 @@ export default {
     },
     computed: {
         visibleLogos() {
-            return [...this.logos, ...this.logos, ...this.logos];//Тройное дублирование *фикс*
+            return [...this.logos];
         },
     },
-    mounted() {
-        this.calculateWidths();
-        this.startAnimation();
-        window.addEventListener("resize", this.calculateWidths);
-    },
-    beforeDestroy() {
-        window.removeEventListener("resize", this.calculateWidths);
-    },
-    methods: {
-        calculateWidths() {
-            this.containerWidth = this.$refs.logosContainer.clientWidth;
-            this.logosWidth = this.$refs.logosContainer.scrollWidth / 2;
-        },
-        startAnimation() {
-            const animate = () => {
-                this.offset -= this.speed;
-                if (Math.abs(this.offset) >= this.logosWidth) {
-                    this.offset = 0;
-                }
-                requestAnimationFrame(animate);
-            };
-            animate();
-        },
-    },
+
 };
 </script>
 
-<style lang=""></style>
+<style>
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#ticker-track {
+  animation: ticker 30s linear infinite;
+}
+</style>

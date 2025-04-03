@@ -4,7 +4,7 @@
             class="flex-col justify-between w-2/5 h-auto text-center cursor-default pt-4 pl-20"
         >
             <div>
-                <h1 class="text-3xl font-bold uppercas dark:text-white">
+                <h1 class="text-3xl font-black  uppercase  dark:text-white">
                     Солнечных дней
                 </h1>
             </div>
