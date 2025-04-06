@@ -7,14 +7,13 @@
             <div
                 v-for="(logo, index) in visibleLogos"
                 :key="index"
-                class="px-4"
+                class="px-6 h-10"
             >
                 <a :href="logo.url" target="_blank" rel="noopener noreferrer">
                     <img
                         :alt="logo.alt"
-                        height="100"
+                        class="h-full w-auto dark:brightness-0 dark:grayscale dark:invert"
                         :src="logo.src"
-                        width="150"
                     />
                 </a>
             </div>
@@ -27,14 +26,13 @@
             <div
                 v-for="(logo, index) in visibleLogos"
                 :key="index"
-                class="px-4"
+                class="px-6 h-10"
             >
                 <a :href="logo.url" target="_blank" rel="noopener noreferrer">
                     <img
                         :alt="logo.alt"
-                        height="100"
+                        class="h-full w-auto  dark:brightness-0 dark:grayscale dark:invert"
                         :src="logo.src"
-                        width="150"
                     />
                 </a>
             </div>
@@ -54,14 +52,14 @@ import Logo8 from "@/Assets/Partners/sanriks.svg";
 import Logo9 from "@/Assets/Partners/ceramicanova.png";
 import Logo10 from "@/Assets/Partners/ceruttispa.png";
 import Logo11 from "@/Assets/Partners/laufen.png";
-import Logo12 from "@/Assets/Partners/roca.svg";
+import Logo12 from "@/Assets/Partners/roca.webp";
 import Logo13 from "@/Assets/Partners/ravak.png";
 import Logo14 from "@/Assets/Partners/grohe.png";
 import Logo15 from "@/Assets/Partners/hansgrohe.svg";
 import Logo16 from "@/Assets/Partners/belbagno.png";
 import Logo17 from "@/Assets/Partners/bettoserb.svg";
 import Logo18 from "@/Assets/Partners/caprigo.svg";
-import Logo19 from "@/Assets/Partners/cersanit.png";
+import Logo19 from "@/Assets/Partners/cersanit.webp";
 import Logo20 from "@/Assets/Partners/cezares.png";
 
 export default {
