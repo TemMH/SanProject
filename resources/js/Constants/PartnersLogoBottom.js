@@ -1,122 +1,107 @@
-import Aquatek from "@/Assets/Partners/aquatek.webp";
-import Aquanet from "@/Assets/Partners/aquanet.svg";
-import Aquaton from "@/Assets/Partners/aquaton.svg";
-import Aqwella from "@/Assets/Partners/aqwella.png";
-import Alcaplast from "@/Assets/Partners/alcaplast.png";
-import Azario from "@/Assets/Partners/azario.png";
-import AMPM from "@/Assets/Partners/am_pm.svg";
-import Sanriks from "@/Assets/Partners/sanriks.svg";
-import Ceramicanova from "@/Assets/Partners/ceramicanova.png";
-import CeruttiSpa from "@/Assets/Partners/ceruttispa.png";
-import Laufen from "@/Assets/Partners/laufen.png";
-import Roca from "@/Assets/Partners/roca.webp";
-import Ravak from "@/Assets/Partners/ravak.png";
-import Grohe from "@/Assets/Partners/grohe.png";
-import Hansgrohe from "@/Assets/Partners/hansgrohe.svg";
-import BelBagno from "@/Assets/Partners/belbagno.png";
-import BettoSerb from "@/Assets/Partners/bettoserb.svg";
-import Caprigo from "@/Assets/Partners/caprigo.svg";
-import Cersanit from "@/Assets/Partners/cersanit.webp";
-import Cezares from "@/Assets/Partners/cezares.png";
+import Iddis from "@/Assets/Partners/Bottom/iddis.svg";
+import JacobDelafon from "@/Assets/Partners/Bottom/jacob_delafon.webp";
+import Lemark from "@/Assets/Partners/Bottom/lemark.webp";
+import Paini from "@/Assets/Partners/Bottom/paini.png";
+import Ulgran from "@/Assets/Partners/Bottom/ulgran.png";
+import Vitra from "@/Assets/Partners/Bottom/vitra.svg";
+import Vincea from "@/Assets/Partners/Bottom/vincea.png";
+import Grossman from "@/Assets/Partners/Bottom/grossman.png";
+import Fabia from "@/Assets/Partners/Bottom/grossman.png"; // fix
+import Rostms from "@/Assets/Partners/Bottom/rostms.png";
+import Kaiser from "@/Assets/Partners/Bottom/kaiser.png";
+import ODAODA from "@/Assets/Partners/Bottom/kaiser.png"; //fix
+import RGW from "@/Assets/Partners/Bottom/rgw.png";
+import Maxonor from "@/Assets/Partners/Bottom/maxonor.svg";
+import Dveen from "@/Assets/Partners/Bottom/dveen.svg";
+import Melana from "@/Assets/Partners/Bottom/melana.png";
+import Boheme from "@/Assets/Partners/Bottom/melana.png"; //fix
 
-export default [{
-    src: Aquatek,
-    alt: "Aquatek",
-    url: "https://www.aquatek-rf.ru"
-},
-{
-    src: Aquanet,
-    alt: "Aquanet",
-    url: "https://www.aquanet.ru"
-},
-{
-    src: Aquaton,
-    alt: "Aquaton",
-    url: "https://aquaton.ru"
-},
-{
-    src: Aqwella,
-    alt: "Aqwella",
-    url: "https://www.aqwella.com"
-},
-{
-    src: Alcaplast,
-    alt: "Alcaplast",
-    url: "https://alcaplast.shop"
-},
-{
-    src: Azario,
-    alt: "Azario",
-    url: "https://azario.ru"
-},
-{
-    src: AMPM,
-    alt: "AM.PM",
-    url: "https://ampm-store.ru"
-},
-{
-    src: Sanriks,
-    alt: "Sanriks",
-    url: "https://sanriks.ru"
-},
-{
-    src: Ceramicanova,
-    alt: "Ceramicanova",
-    url: "https://ceramicanova.com"
-},
-{
-    src: CeruttiSpa,
-    alt: "CeruttiSpa",
-    url: "https://www.ceruttispa-shop.ru"
-},
-{
-    src: Laufen,
-    alt: "Laufen",
-    url: "https://www.laufen.com"
-},
-{
-    src: Roca,
-    alt: "Roca",
-    url: "https://www.roca.ru"
-},
-{
-    src: Ravak,
-    alt: "Ravak",
-    url: "https://www.ravak.ru"
-},
-{
-    src: Grohe,
-    alt: "Grohe",
-    url: "https://grohe-russia.shop"
-},
-{
-    src: Hansgrohe,
-    alt: "Hansgrohe",
-    url: "https://www.hansgrohe.ru"
-},
-{
-    src: BelBagno,
-    alt: "BelBagno",
-    url: "https://belbagno.ru"
-},
-{
-    src: BettoSerb,
-    alt: "BettoSerb",
-    url: "https://bettoserb.com"
-},
-{
-    src: Caprigo,
-    alt: "Caprigo",
-    url: "https://www.caprigo.ru"
-},
-{
-    src: Cersanit,
-    alt: "Cersanit",
-    url: "https://cersanit.ru"
-},
-{
-    src: Cezares,
-    alt: "Cezares",
-    url: "https://cezares.ru"
-},
+export default [
+    
+    {
+        src: Iddis,
+        alt: "Iddis",
+        url: "https://www.iddis.ru"
+    },
+    {
+        src: JacobDelafon,
+        alt: "Jacob Delafon",
+        url: "https://www.jacobdelafon.ru"
+    },
+    {
+        src: Lemark,
+        alt: "Lemark",
+        url: "https://www.lemark.su" //Не уверен то что офицальный
+    },
+    {
+        src: Paini,
+        alt: "Paini",
+        url: "https://paini.com"
+    },
+    {
+        src: Ulgran,
+        alt: "Ulgran",
+        url: "https://ulgran.ru"
+    },
+    {
+        src: Vitra,
+        alt: "Vitra",
+        url: "https://www.vitra-russia.ru"
+    },
+    {
+        src: Vincea,
+        alt: "Vincea",
+        url: "https://vincea.ru"
+    },
+    {
+        src: Grossman,
+        alt: "Grossman",
+        url: "https://grossman.com.ru"
+    },
+    {
+        src: Fabia,
+        alt: "Fabia",
+        url: "https://fabia-profi.ru"
+    },
+    {
+        src: Rostms,
+        alt: "Rostms",
+        url: "https://rostms.ru"
+    },
+    {
+        src: Kaiser,
+        alt: "Kaiser",
+        url: "https://kaiser.ru"
+    },
+    {
+        src: ODAODA,
+        alt: "ODA ODA",
+        url: "https://odaoda.ru"
+    },
+    {
+        src: RGW,
+        alt: "RGW",
+        url: "https://rgw-magazin.ru"
+    },
+    {
+        src: Maxonor,
+        alt: "Maxonor",
+        url: "https://maxonor.ru"
+    },
+    {
+        src: Dveen,
+        alt: "Dveen",
+        url: "https://dveen.ru"
+    },
+    {
+        src: Melana,
+        alt: "Melana",
+        url: "https://melana.info"
+    },
+    {
+        src: Boheme,
+        alt: "Boheme",
+        url: "https://boheme.su"
+    },
+
 ];

@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-2/5 bg-red-400 overflow-hidden place-items-end aspect-square rounded-xl transform transition duration-500 hover:scale-110"
+                    class="w-2/5 overflow-hidden place-items-end aspect-square rounded-xl transform transition duration-500 hover:scale-110"
                 >
                     <img class="w-full h-full" :src="square_img" alt=""> 
                     <!-- Square -->
@@ -30,7 +30,7 @@
             </div>
 
             <div
-                class="bg-red-500 h-[28rem] aspect-[16/9] mt-9 rounded-xl z-40 overflow-hidden transform transition duration-500 hover:scale-105"
+                class="h-[28rem] aspect-[16/9] mt-9 rounded-xl z-40 overflow-hidden transform transition duration-500 hover:scale-105"
             >
                 <img class="w-full h-full" :src="horizontal_img" alt=""> 
                 <!-- Horizontal -->
@@ -38,7 +38,7 @@
         </div>
 
         <div
-            class="w-[28rem] aspect-[9/16] bg-blue-400 overflow-hidden h-auto ml-9 rounded-xl transform transition duration-500 hover:scale-110"
+            class="w-[28rem] aspect-[9/16] overflow-hidden h-auto ml-9 rounded-xl transform transition duration-500 hover:scale-110"
         >
             <img class="w-full h-full" :src="vertical_img" alt=""> 
             <!-- Vertical -->

@@ -23,7 +23,11 @@ import Welcome from "../../Components/Welcome.vue";
     <Strengths />
 
     <Experts />
-
+<!-- <blockquote class="text-2xl font-semibold text-center text-slate-900">
+  <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 w-full before:bg-yellow-500 relative inline-block">
+    <span class="relative text-white">30% за приглашение</span>,
+  </span>
+</blockquote> -->
     <Gallery />
 
     <Workflow />
@@ -34,10 +38,4 @@ import Welcome from "../../Components/Welcome.vue";
 
     <!-- </Layout> -->
 </template>
-<!-- <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
-  Когда вы все время выглядите
-  <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
-    <span class="relative text-white">раздраженным</span>,
-  </span>
-  люди думают, что вы заняты.
-</blockquote> -->
+
