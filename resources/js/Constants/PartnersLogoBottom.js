@@ -6,7 +6,7 @@ import Ulgran from "@/Assets/Partners/Bottom/ulgran.png";
 import Vitra from "@/Assets/Partners/Bottom/vitra.svg";
 import Vincea from "@/Assets/Partners/Bottom/vincea.png";
 import Grossman from "@/Assets/Partners/Bottom/grossman.png";
-import Fabia from "@/Assets/Partners/Bottom/grossman.png"; // fix
+import Fabia from "@/Assets/Partners/Bottom/fabia.webp"; // не качественно
 import Rostms from "@/Assets/Partners/Bottom/rostms.png";
 import Kaiser from "@/Assets/Partners/Bottom/kaiser.png";
 import ODAODA from "@/Assets/Partners/Bottom/kaiser.png"; //fix
@@ -14,7 +14,7 @@ import RGW from "@/Assets/Partners/Bottom/rgw.png";
 import Maxonor from "@/Assets/Partners/Bottom/maxonor.svg";
 import Dveen from "@/Assets/Partners/Bottom/dveen.svg";
 import Melana from "@/Assets/Partners/Bottom/melana.png";
-import Boheme from "@/Assets/Partners/Bottom/melana.png"; //fix
+import Boheme from "@/Assets/Partners/Bottom/boheme.webp"; //не качественно
 
 export default [
     

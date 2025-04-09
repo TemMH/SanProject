@@ -3,7 +3,6 @@
     <div class="flex flex-row items-center overflow-hidden">
         <div
             class="flex flex-row items-center justify-start grow-0 shrink-0"
-
                   :class="animationClass"
         >
             <div
@@ -76,4 +75,14 @@ const animationClass = computed(() => {
 .animate-ticker-reverse {
   animation: ticker-reverse 30s linear infinite;
 }
+.animate-ticker,
+.animate-ticker-reverse {
+  animation-play-state: running;
+}
+
+.animate-ticker:hover,
+.animate-ticker-reverse:hover {
+  animation-play-state: paused;
+}
+
 </style>

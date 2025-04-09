@@ -18,15 +18,17 @@
                 </p>
             </div>
 
-            <div class="">
-                <button class="aspect-square rounded-full h-32 bg-white">
-                    Перейти
-                </button>
-            </div>
+       
+  <button @click="handleClick" class="relative size-64 rounded-full duration-700 ease-in-out hover:scale-110">
+    <img :src="ButtonTop" alt="Кнопка" class="absolute top-0 left-0 aspect-square rounded-full size-64 transition dark:brightness-0 dark:grayscale dark:invert z-10 animate-spin-slow" />
+
+    <img :src="ButtonLower" class="absolute top-0 left-0 inset-x-0 mx-auto inset-y-0 my-auto dark:brightness-0 dark:grayscale dark:invert size-44 z-10 transition-transform duration-700 ease-in-out hover:rotate-90" alt="" srcset="">
+</button>
+        
         </div>
 
         <div class="flex relative w-3/5 h-auto">
-            <!-- SVG -->
+            <!-- SVG FROM FRAME -->
 
             <svg
                 class="h-auto absolute left-10 w-1/3"
@@ -42,7 +44,7 @@
                     </clipPath>
                 </defs>
                 <!-- фото первого свг -->
-                <image :href="vertical_img"  clip-path="url(#clip-shape-first)" />
+                <image :href="VerticalImg"  clip-path="url(#clip-shape-first)" />
              
 
             </svg>
@@ -62,7 +64,7 @@
                     </clipPath>
                 </defs>
                 <!-- фото второго свг -->
-                <image :href="square_img" clip-path="url(#clip-shape-second)" />
+                <image :href="SquareImg" clip-path="url(#clip-shape-second)" />
 
             </svg>
             <svg
@@ -80,25 +82,32 @@
                     </clipPath>
                 </defs>
                 <!-- фото третьего свг -->
-                <image :href="horizontal_img" clip-path="url(#clip-shape-third)" />
+                <image :href="HorizontalImg" clip-path="url(#clip-shape-third)" />
 
             </svg>
         </div>
     </section>
 </template>
-<script>
-import VerticalImg from '@/Assets/Gallery/example_vertical.png'
-import SquareImg from '@/Assets/Gallery/example_square.png'
-import HorizontalImg from '@/Assets/Gallery/example_horizontal.png'
+<script setup>
+import VerticalImg from '@/Assets/Gallery/example_vertical.png' //fix path to welcome
+import SquareImg from '@/Assets/Gallery/example_square.png' //fix path to welcome
+import HorizontalImg from '@/Assets/Gallery/example_horizontal.png' //fix path to welcome
 
-export default {
-    data() {
-        return {
-            vertical_img: VerticalImg,
-            square_img: SquareImg,
-            horizontal_img: HorizontalImg,
-        };
-    },
-};
+import ButtonTop from '@/Assets/Welcome/Button/WelcomeButton.svg'
+import ButtonLower from '@/Assets/Welcome/Button/inButton.svg'
+
+
+
+
+
+const handleClick = () => {
+  console.log('Кнопка нажата')
+}
+
+
+        
+
+    
+
 </script>
 <style></style>

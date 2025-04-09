@@ -15,6 +15,9 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 nunito: ['Nunito', 'sans-serif'],
             },
+            animation: {
+                'spin-slow': 'spin 10s linear infinite',
+              },
         },
     },
     plugins: [],
