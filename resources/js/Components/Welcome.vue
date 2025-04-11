@@ -97,17 +97,12 @@ import ButtonTop from '@/Assets/Welcome/Button/WelcomeButton.svg'
 import ButtonLower from '@/Assets/Welcome/Button/inButton.svg'
 
 
-
-
-
 const handleClick = () => {
-  console.log('Кнопка нажата')
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  })
 }
-
-
-        
-
-    
 
 </script>
 <style></style>
