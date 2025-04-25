@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import PartnerTicker from "@/components/PartnerTicker.vue";
+import PartnerTicker from "@/Components/PartnerTicker.vue";
 import topLogos from '@/Constants/PartnersLogoTop.js';
 import bottomLogos from '@/Constants/PartnersLogoBottom.js';
 
