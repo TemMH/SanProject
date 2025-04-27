@@ -16,7 +16,7 @@
             <p class="pt-5 font-semibold dark:text-slate-100">будут описаны максимально</p>
         </div>
     </section>
-
+    
     <section
         class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full cursor-default"
     >
