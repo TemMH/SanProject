@@ -19,7 +19,7 @@
             </div>
 
        
-  <button @click="handleClick" class="relative size-64 rounded-full duration-700 ease-in-out hover:scale-110">
+  <button @click="handleClick" class="relative size-64 rounded-full duration-700 ease-in-out hover:scale-110 hidden xl:inline" >
     <img :src="ButtonTop" alt="Кнопка" class="absolute top-0 left-0 aspect-square rounded-full size-64 transition dark:brightness-0 dark:grayscale dark:invert z-10 animate-spin-slow" />
 
     <img :src="ButtonLower" class="absolute top-0 left-0 inset-x-0 mx-auto inset-y-0 my-auto dark:brightness-0 dark:grayscale dark:invert size-44 z-10 transition-transform duration-700 ease-in-out hover:rotate-90" alt="" srcset="">

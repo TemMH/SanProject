@@ -7,7 +7,7 @@
                 <transition name="fade-slide" mode="out-in">
                     <div
                         :key="experts[currentExpert].image"
-                        class="aspect-[3/4] overflow-hidden absolute w-5/6 inset-x-0 mx-auto inset-y-0 my-auto rounded-xl transform transition-transform duration-500 hover:scale-105 before:absolute before:inset-0 before:bg-black/30 before:rounded-xl before:pointer-events-none before:[mask-image:radial-gradient(circle,rgba(0,0,0,0)_50%,rgba(0,0,0,1)_100%)]"
+                        class="aspect-[3/4] overflow-hidden absolute xl:w-5/6 inset-x-0 mx-auto inset-y-0 my-auto rounded-xl transform transition-transform duration-500 hover:scale-105 before:absolute before:inset-0 before:bg-black/30 before:rounded-xl before:pointer-events-none before:[mask-image:radial-gradient(circle,rgba(0,0,0,0)_50%,rgba(0,0,0,1)_100%)]"
                     >
                         <img
                             :src="experts[currentExpert].image"
@@ -19,7 +19,7 @@
             </div>
 
             <div
-                class="flex flex-col justify-between w-2/3 text-white text-lg py-20"
+                class="flex flex-col justify-between w-2/3 text-white text-lg py-20 ml-10 xl:ml-0"
             >
                 <transition name="text-slide" mode="out-in">
                     <div
@@ -85,7 +85,7 @@
                     </transition>
 
                     <button
-                        class="w-1/5 bg-yellow-400 content-center rounded-xl"
+                        class="w-1/5 bg-yellow-400 content-center rounded-xl text-black"
                         @click="nextExpert"
                         :disabled="isTransitioning"
                     >

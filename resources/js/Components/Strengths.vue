@@ -1,7 +1,7 @@
 <template>
 
 <section
-        class="flex mt-12 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full text-xl cursor-default"
+        class="flex mt-24 xl:mt-12 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full text-xl cursor-default"
     >
         <div class="block  w-1/3 h-24 text-center">
             <h1 class="text-3xl font-bold uppercase dark:text-white">20%</h1>
@@ -16,7 +16,7 @@
             <p class="pt-5 font-semibold dark:text-slate-100">будут описаны максимально</p>
         </div>
     </section>
-
+    
     <section
         class="mt-5 justify-center place-self-center w-full max-w-screen-xl max-xl:w-full cursor-default"
     >
