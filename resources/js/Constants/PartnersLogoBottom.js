@@ -9,7 +9,7 @@ import Grossman from "@/Assets/Partners/Bottom/grossman.png";
 import Fabia from "@/Assets/Partners/Bottom/fabia.webp"; // не качественно
 import Rostms from "@/Assets/Partners/Bottom/rostms.png";
 import Kaiser from "@/Assets/Partners/Bottom/kaiser.png";
-import ODAODA from "@/Assets/Partners/Bottom/kaiser.png"; //fix
+import ODAODA from "@/Assets/Partners/Bottom/odaoda.png";
 import RGW from "@/Assets/Partners/Bottom/rgw.png";
 import Maxonor from "@/Assets/Partners/Bottom/maxonor.svg";
 import Dveen from "@/Assets/Partners/Bottom/dveen.svg";
