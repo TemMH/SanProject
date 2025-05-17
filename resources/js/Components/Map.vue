@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <section
         class="flex mt-24 place-self-center w-full max-w-screen-2xl max-xl:w-full max-w-2xl:w-96 dark:text-white"
     >
